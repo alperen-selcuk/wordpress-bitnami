@@ -1,4 +1,24 @@
+## INSTALL AŞAMASI
 
+sunucuya girmek için.
+
+```
+ssh -i "indirdiğiniz pem" ubuntu@"sunucu public IP adresiniz"
+```
+
+sunucuya girdikten sonra 
+
+```
+sudo su -
+
+curl https://raw.githubusercontent.com/alperen-selcuk/docker-install/main/ubuntu-2204.sh | bash -
+
+git clone https://github.com/alperen-selcuk/wordpress-bitnami.git
+
+cd wordpress-bitnami
+
+docker compose up -d 
+```
 
 
 Available environment variables:
